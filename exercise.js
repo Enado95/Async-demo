@@ -18,7 +18,7 @@
             if(customer.isGold){                    // check if customer is a gold member
                 const movies = await getTopMovies();// get movies
                 console.log('Top movies: ', movies);
-                const email = await sendEmail(customer.email, movies) // send to email from customer object and list of movies
+                await sendEmail(customer.email, movies) // send to email from customer object and list of movies
                 console.log('Email sent..');
             }
             
