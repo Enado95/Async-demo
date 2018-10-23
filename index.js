@@ -17,7 +17,7 @@ getUser(1)
 function getUser(id) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log('Reading a user from a database..');
+            console.log('Reading a user from a database....');
             resolve({id: id, gitHubUsername: 'enado95'})
         }, 2000);
     });
